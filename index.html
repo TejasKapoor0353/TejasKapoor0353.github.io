@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>T3jas Portfolio</title>
+    <meta name="description" content="T3jas' portfolio showcasing projects, skills, and contact information." />
+    <meta name="author" content="T3jas" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('portfolio-theme');
+          if (!theme) {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          document.documentElement.classList.toggle('light', theme === 'light');
+        } catch (e) {
+          console.warn(e);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <span class="logo">T3</span>
+          <div>
+            <p class="eyebrow">Full-Stack Portfolio</p>
+            <h1>T3jas</h1>
+          </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span>Toggle theme</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <div class="hero-content">
+            <p class="subtitle">Hi, I’m T3jas.</p>
+            <h2>Building modern web experiences with polished design and performance.</h2>
+            <p>
+              I create user-focused interfaces, responsive websites, and interactive applications that look great
+              on every screen. Explore my projects and reach out if you want to build something together.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View projects</a>
+              <a class="button button-secondary" href="#contact">Contact me</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <p class="card-label">Featured work</p>
+              <h3>Portfolio website redesign</h3>
+              <p>Creative site with accessibility-first styling, dark mode, and responsive layout.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About me</p>
+            <h2>Designing thoughtful digital products from concept to launch.</h2>
+          </div>
+          <div class="about-grid">
+            <div>
+              <p>
+                I specialize in front-end development, web design, and building bold landing pages that
+                communicate brand identity clearly.
+              </p>
+            </div>
+            <div>
+              <ul class="skills-list">
+                <li>Responsive web design</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React / TypeScript</li>
+                <li>UI/UX and branding</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section projects" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work that demonstrates impact and polish.</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="project-tag">Web App</span>
+              <h3>TaskFlow</h3>
+              <p>A productivity dashboard built for teams to manage tasks, track goals, and visualize progress.</p>
+            </article>
+            <article class="project-card">
+              <span class="project-tag">Landing Page</span>
+              <h3>Launchworthy</h3>
+              <p>A conversion-focused landing page with scrolling interactions and custom brand styling.</p>
+            </article>
+            <article class="project-card">
+              <span class="project-tag">Portfolio</span>
+              <h3>Creative Showcase</h3>
+              <p>A clean portfolio experience that highlights case studies, skills, and messaging.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact" id="contact">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build your next web presence together.</h2>
+          </div>
+          <p class="contact-text">
+            I’m available for freelance work, collaborations, and new opportunities. Send a message and I’ll reply
+            within one business day.
+          </p>
+          <a class="button button-primary" href="mailto:t3jas@example.com">Say hello</a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 T3jas. Crafted with focus on accessible, modern front-end design.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
