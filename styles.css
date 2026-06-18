@@ -6,6 +6,24 @@
   --border: rgba(15, 23, 42, 0.08);
 }
 
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero-card,
+.project-card,
+.skills-list li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.eyebrow,
+.contact-text,
+.site-footer {
+  color: var(--muted);
+}
+
 html.dark {
   --bg: #090b10;
   --text: #f8fafc;
